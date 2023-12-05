@@ -12,7 +12,7 @@ This script is designed to power cycle a device, like a modem upon a failed netw
 
 	* see https://pi-plates.com/relayplate2-users-guide/ for further details of the relay board
 
-5. For the script to execute automatically you will need to create a cron job. You can copy paste the command into the terminal. Jsut make sure to replace the home path with your username. pi for defualt 
+5. For the script to execute automatically you will need to create a cron job. You can copy paste the command into the terminal. Just make sure to replace the home path with your username. pi for defualt 
 
 _{ crontab -l; echo "15 * * * * cd /home/pi/IPRelay && /usr/bin/python iprelay.py > tmp/iprelay.log 2>&1"; } | crontab -_ 
 
